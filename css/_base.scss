@@ -1,0 +1,61 @@
+/**
+ * Base styles
+ */
+
+$base-font-size: 16px;
+
+$primary-font-stack: 'Open Sans', Helvetica, Arial, sans-serif;
+$secondary-font-stack: Georgia, 'Times New Roman', serif;
+
+$primary-text-color: #2e2e2e;
+
+$primary-color: #245170;
+$secondary-color: #50E3C2;
+
+$primary-link-color: #4A90E2;
+$primary-link-hover-color: lighten($primary-link-color, 10%);
+
+$primary-button-color: $primary-color;
+$primary-button-hover-color: #b6270e;
+
+
+
+body {
+	font-family: $primary-font-stack;
+	font-size: $base-font-size;
+	line-height: 1.5em;
+	color: $primary-text-color;
+}
+
+.constraint {
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 0 1.5em;
+}
+
+a {
+	color: $primary-link-color;
+	text-decoration: underline;
+
+	&:hover {
+		color: $primary-link-hover-color;
+	}
+}
+
+
+a.button {
+	border: 2px solid #555555;
+	color: #555555;
+	display: inline-block;
+	padding: 0.5em 1em;
+	border-radius: 0;
+	text-decoration: none;
+}
+a.button:hover {
+    border-color: $primary-link-color;
+    color: $primary-link-color;
+}
+
+.no-js .no-js-hide {
+	display: none;
+}

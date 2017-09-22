@@ -1,0 +1,21 @@
+#body {
+	margin: 3em 0;
+
+	p {
+		margin-bottom: 1.5em;
+	}
+
+	@media (min-width: 750px) {
+		p {
+			font-size: 1.25em;
+			line-height: 1.5em;
+		}
+	}
+}
+
+.alert {
+    padding: 3em 0;
+    background: #fffde1;
+    background: linear-gradient(#fffde1, #fffff8);
+    color: #305886;
+}
