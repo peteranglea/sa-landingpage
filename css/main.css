@@ -286,7 +286,8 @@ figure.highlight {
       column-gap: 3em; } }
   #featurelist p:last-child {
     text-align: center;
-    font-size: 2em; }
+    font-size: 2em;
+    line-height: 1.15em; }
 
 footer {
   background: #242424;
