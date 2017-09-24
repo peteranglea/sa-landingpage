@@ -1,5 +1,5 @@
 #body {
-	margin: 3em 0;
+	margin: 3em 0 0;
 
 	p {
 		margin-bottom: 1.5em;
@@ -20,15 +20,16 @@
     color: #305886;
 }
 
+h2 {
+	font-size: 3em;
+	line-height: 1.15em;
+	font-weight: normal;
+	margin-bottom: 1em;
+}
+
 .heading {
 	margin: 2rem 0;
 	
-	h2 {
-		font-size: 3em;
-		line-height: 1.15em;
-		font-weight: normal;
-	}
-
 	@media (min-width: 750px) {
 		background-size: 9.7em;
 	    min-height: 7em;
@@ -36,6 +37,10 @@
 
 		&.heading-equip {
 		    background: url('../images/waveform.svg') top repeat-x;
+		    background-size: 9.7em;
+		}
+		&.heading-expand {
+		    background: url('../images/waveform2.svg') top repeat-x;
 		    background-size: 9.7em;
 		}
 
@@ -83,4 +88,102 @@ figure.highlight {
 		    flex-direction: row-reverse;
 		}
 	}
+}
+
+.testimonials {
+    padding: 2em 1em;
+    margin-top: 5em;
+
+    &.testimonials-equip {
+    	background: #4A90E2;
+    }
+    &.testimonials-expand {
+    	background: #50E3C2;
+    }
+
+    .testimonial {
+	    max-width: 275px;
+	    margin: 1em auto;
+	    padding: 1em;
+	    background: #f0f0f0;
+	    border-radius: 3px;
+	    box-shadow: 0px 1px 4px rgba(0,0,0,0.5);
+	    font-size: 1rem;
+	}
+
+	#body & p {
+	    font-size: 1rem;
+	}
+
+	p.meta {
+	    color: #666666;
+	    font-weight: 300;
+
+	    img {
+		    float: left;
+		    margin-right: 1rem;
+		    border-radius: 100%;
+		}
+	}
+
+	@media (min-width: 750px) {
+		display: flex;
+    	justify-content: center;
+    	margin-top: 6em;
+
+    	.testimonial {
+    		margin: -4em 1em 0;
+    	}
+	}
+}
+
+#featurelist {
+	padding: 3em 0;
+	background: #123052;
+	color: #EAEFF5;
+
+	.constraint {
+		max-width: 900px;
+	}
+
+	h2 {
+		font-size: 1.75em;
+		line-height: 1.15em;
+		margin-bottom: 0em;
+		font-weight: bold;
+	}
+
+	ul {
+		list-style: disc;
+		margin-left: 1.5em;
+		margin-bottom: 3.5em;
+	}
+
+	a {
+		color: #ffffff;
+
+		&:hover {
+			color: #eaeff5;
+		}
+	}
+
+	@media (min-width: 750px) {
+		ul {
+			column-count: 2;
+			column-gap: 3em;
+		}
+	}
+
+	p:last-child {
+		text-align: center;
+		font-size: 2em;
+	}
+}
+
+footer {
+	background: #242424;
+	color: #cccccc;
+	font-size: 0.8rem;
+	padding: 2em 0;
+	text-align: center;
 }
