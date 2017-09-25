@@ -151,7 +151,8 @@ a.button:hover {
   color: #fff;
   padding: 0.5em 0; }
   #hero-secondary p {
-    font-size: 1em; }
+    font-size: 1em;
+    margin-bottom: 0; }
   #hero-secondary img {
     height: 1.15em;
     vertical-align: baseline;
@@ -165,13 +166,14 @@ a.button:hover {
 
 #body {
   margin: 3em 0 0; }
-  #body p {
-    margin-bottom: 1.5em; }
-  @media (min-width: 750px) {
-    #body p {
-      font-size: 1.25em;
-      line-height: 1.5em; } }
 
+p {
+  margin-bottom: 1.5em; }
+
+@media (min-width: 750px) {
+  p {
+    font-size: 1.25em;
+    line-height: 1.5em; } }
 .alert {
   padding: 3em 0;
   background: #fffde1;
@@ -208,9 +210,11 @@ h2 {
 
 figure.highlight {
   text-align: center;
-  margin-bottom: 2em; }
+  margin-bottom: 4em; }
   figure.highlight img {
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.5rem;
+    max-width: 175px;
+    max-height: 150px; }
   figure.highlight p {
     margin-bottom: 0; }
   @media (min-width: 500px) {
@@ -218,7 +222,7 @@ figure.highlight {
       display: flex;
       text-align: left;
       justify-content: space-between;
-      align-content: flex-start; }
+      align-items: center; }
       figure.highlight div:first-child {
         flex-basis: 25%; }
       figure.highlight img {
