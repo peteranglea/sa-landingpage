@@ -16,7 +16,7 @@ p {
 .alert {
     padding: 3em 0;
     background: #fffde1;
-    background: linear-gradient(#fffde1, #fffff8);
+    background: linear-gradient(#efefef, #ffffff);
     color: #305886;
 }
 
@@ -62,8 +62,8 @@ figure.highlight {
 
 	img {
 		margin-bottom: 0.5rem;
-		max-width: 175px;
-		max-height: 150px;
+		max-width: 125px;
+		max-height: 100px;
 	}
 
 	p {
@@ -82,6 +82,8 @@ figure.highlight {
 		img {
 			width: 100%;
 			margin-bottom: 0;
+			max-width: 175px;
+			max-height: 150px;
 		}
 		figcaption {
 			flex-basis: 70%;
@@ -97,10 +99,10 @@ figure.highlight {
     margin-top: 5em;
 
     &.testimonials-equip {
-    	background: #4A90E2;
+    	background: #005cb6;
     }
     &.testimonials-expand {
-    	background: #50E3C2;
+    	background: #4b2176;
     }
 
     .testimonial {
